@@ -1,9 +1,14 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
-const color = require("color");
+const colors = require("colors");
+
+const connectDB = require("./config/db");
 // loading the dotenv file
 dotenv.config({ path: "./config/config.env" });
+
+// connect to DB
+connectDB();
 
 // Load the routes
 const products = require("./routes/productRoute");

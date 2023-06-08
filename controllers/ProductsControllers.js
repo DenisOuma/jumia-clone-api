@@ -8,7 +8,6 @@ exports.getProducts = (req, res, next) => {
 // desc         Add a New Product
 // @route       GET /api/v1/products
 // @Access      Private
-
 exports.createProduct = (req, res, next) => {
 	res.status(200).json({ success: "true", msg: "Add New Bootcamp Success" });
 };
